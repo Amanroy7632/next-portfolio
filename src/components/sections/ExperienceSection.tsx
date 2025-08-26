@@ -10,7 +10,7 @@ import { ArrowUpRight, CodeXml, GraduationCap, Lightbulb } from "lucide-react";
 
 function ExperienceSection() {
   const [openItem, setOpenItem] = useState("experience-1");
-  const [openFreelanceItem, setOpenFreelanceItem] = useState("");
+  // const [openFreelanceItem, setOpenFreelanceItem] = useState("");
   const [openEducationItem, setOpenEducationItem] = useState("");
   return (
     <section className=" border-x  full-line-bottom relative">
