@@ -327,7 +327,7 @@ function PixelTypingText({
 // Demo component with multiple words
 export default function PixelTypingDemo() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["I AM","A DEV", "SHIPS", "IDEAS"];
+  const words = ["I AM","A DEV", "ENGINEER", "IDEAS"];
    const [showText, setShowText] = useState(false);
   // Start after 3 seconds
   useEffect(() => {

@@ -95,78 +95,7 @@ function ExperienceSection() {
           </div>
         ))}
       </div>
-      <div className="px-4 py-2   ">
-        <h3 className="text-primary font-medium ">Freelancing</h3>
-      </div>
-      <div className=" full-line-bottom relative ">
-        {freelanceData.map((freelancing, index) => (
-          <div key={index} className="relative pl-10">
-            {index !== freelanceData.length - 1 && (
-              <div className="absolute left-6 top-5 h-full w-px bg-border" />
-            )}
-
-            <div className="absolute left-3 top-5 z-10">
-              <div
-                className="flex size-6 shrink-0 items-center justify-center rounded-md bg-muted text-muted-foreground  "
-                aria-hidden="true"
-              >
-                <freelancing.icon className="size-4" />
-              </div>
-            </div>
-
-            {/* Accordion */}
-            <Accordion
-              type="single"
-              collapsible
-              value={openFreelanceItem}
-              className="border-b-0"
-              onValueChange={setOpenFreelanceItem}
-            >
-              <AccordionItem value={`experience-${freelancing.id}`}>
-                <AccordionTrigger className="border-b-0">
-                  <div className="flex-1 flex flex-col items-start justify-center py-4 pl-4 gap-1 h-full">
-                    <h3 className="text-balance font-mono  font-medium text-base leading-snug flex gap-2 items-center justify-center">
-                      {freelancing.project}
-
-                      <a
-                        href={freelancing.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ArrowUpRight className="size-4 text-muted-foreground hover:text-primary" />
-                      </a>
-                    </h3>
-                    <span className="text-muted-foreground font-normal text-sm">
-                      {freelancing.duration}
-                    </span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-4 pb-4 border-b-0!">
-                  <div className="prose prose-sm max-w-none font-mono text-foreground prose-zinc dark:prose-invert prose-headings:font-sans prose-headings:font-semibold prose-headings:text-balance prose-h2:border-b prose-h2:border-edge prose-h2:pb-2 prose-h2:text-2xl prose-lead:text-base prose-a:font-medium prose-a:break-words prose-a:text-foreground prose-a:underline prose-a:underline-offset-4 prose-code:rounded-md prose-code:border prose-code:bg-muted/50 prose-code:px-[0.3rem] prose-code:py-[0.2rem] prose-code:text-sm prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-hr:border-edge">
-                    <p> {freelancing.description}</p>
-
-                    <ul>
-                      {freelancing.tasks.map((feature, index) => (
-                        <li key={index}>{feature}</li>
-                      ))}
-                    </ul>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {freelancing.badge.map((badge, index) => (
-                        <span
-                          key={index}
-                          className="inline-flex items-center rounded-lg bg-zinc-50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground dark:bg-zinc-900"
-                        >
-                          {badge}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-        ))}
-      </div>
+      
       <div className="px-4 py-2   ">
         <h3 className="text-primary font-medium ">Education</h3>
       </div>
@@ -282,36 +211,43 @@ export const CoinIcon = ({ size = 24, color = "currentColor", ...props }) => (
 const experienceData = [
   {
     id: 1,
-    title: "Senior Frontend Developer",
-    company: "Lightwork Ai",
+    title: "Backend Developer",
+    company: "Ur Heaven Space Pvt Ltd",
     icon: CodeXml,
     job: true,
-    location: "Remote",
-    href: "https://www.lightwork.blue/",
-    duration: "Full-Time  | Oct 2024 - Mar 2025",
-    description: ` It is a Plaform where you can manage properties with ease. Powered by Smart AI, It Automate tasks, streamline communication, and keep tenants happy.`,
+    location: "On-Site",
+    href: "https://www.urheavenspace.com/",
+    duration: "Full-Time  | Nov 2024 - Current",
+    description: ` It is a Software and Construction company where you can manage properties with ease.Providing SAAS Platform i.e crmjio.com.`,
     tasks: [
-      "Developed and maintained user interfaces for web applications using React and TypeScript.",
-      "Collaborated with backend developers to integrate RESTful APIs.",
-      "Implemented responsive design principles to ensure optimal user experience across devices.",
+      "Currently employed as Backend Engineer at UR Heaven Space, where I specialize in utilizing the following technologies -> JavaScript, MongoDB, Redis, AWS (EC2), VPS, docker, Node.js, Express.js, RESTful APIs..",
+"Contributed to developing the scalable, robust services include Role based Authentication (JWT), Efficient Models.",
+      "Collaborated with frontend developers to integrate APIs with frontends.",
       "Optimized application performance and resolved bugs.",
-      "Created pages such as Settings, Docs, Profile and more.",
+      "Led a transformation of monolith to microservices to increase the scalability, availability of services.",
+      "Integrated Payment gateway (RazorPay,Cashfree) for secure transactions and monitoring.",
+      "Contributed to developing Notification Service using SMTP servers, Worked with third party APIs Veblika,Sandgrid."
+
     ],
     badge: [
+      "JavScript",
       "Typescript",
       "React",
       "Next.js",
       "Tailwind CSS",
-      "Shadcn Ui",
       "React Query",
       "React Hook Form",
-      "Zod",
-      "React Redux",
+      "Node.js",
+      "Socket.io",
       "Team Work",
-      "Responsive Design",
-      "Bug Solver",
-      "Api integration",
-      "Research",
+      "Cron-jobs",
+      "Secure API",
+      "Performence",
+      "Third-party APIs",
+      "Database Design",
+      "Backend Architect",
+      "VPS",
+      "Mongodb"
     ],
   },
   {
@@ -326,7 +262,7 @@ const experienceData = [
     description: `i am looking for an opportunity in full stack web development`,
     tasks: [
       "i have a Good experience in Frondent & Backend developerment.",
-      "Have played so much with libraries such as tanstack-query, react-redux etc..",
+      "Have played so much with libraries such as tanstack-query, Node.js , MongoDb, etc..",
       "i am Flexible for in both Part-time and Full-time.",
       "For More experience detail check out my projects.",
     ],
@@ -334,137 +270,137 @@ const experienceData = [
   },
 ];
 
-const freelanceData = [
-  {
-    id: 1,
+// const freelanceData = [
+//   {
+//     id: 1,
 
-    project: "KryptoKapital",
-    icon: CoinIcon,
+//     project: "KryptoKapital",
+//     icon: CoinIcon,
 
-    location: "Remote",
-    href: "https://pro.kryptokapital.info/",
-    duration: "Part-Time  | Feb 2023 - Sep 2024",
-    description: `KryptoKapital is a Platform that give you a practical advice and will guide you step by step to becoming a sovereign crypto investor, easy and directly implementable.
-`,
-    tasks: [
-      "A platform with valious tool to study and analyise crypto status.",
-      "one to one video call leacture and practical.",
-      "All in one platform or beginners who are willing to invest in cryto.",
-      "Re-created the whole patform with Nextjs 13 and Typescript.",
-      "Integreated the Next auth authentication.",
-      "Also connected with supbase and with realtime supabase/ssr.",
-      "Used Framer motion and shadcnui for creating beautiful components.",
-    ],
-    badge: [
-      "Full Stack App",
-      "Typescript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Shadcn Ui",
-      "React Query",
-      "React Hook Form",
-      "Zod",
-      "React Redux",
-      "Team Work",
-      "Responsive Design",
-      "Resend",
-      "Research",
-    ],
-  },
-  {
-    id: 2,
+//     location: "Remote",
+//     href: "https://pro.kryptokapital.info/",
+//     duration: "Part-Time  | Feb 2023 - Sep 2024",
+//     description: `KryptoKapital is a Platform that give you a practical advice and will guide you step by step to becoming a sovereign crypto investor, easy and directly implementable.
+// `,
+//     tasks: [
+//       "A platform with valious tool to study and analyise crypto status.",
+//       "one to one video call leacture and practical.",
+//       "All in one platform or beginners who are willing to invest in cryto.",
+//       "Re-created the whole patform with Nextjs 13 and Typescript.",
+//       "Integreated the Next auth authentication.",
+//       "Also connected with supbase and with realtime supabase/ssr.",
+//       "Used Framer motion and shadcnui for creating beautiful components.",
+//     ],
+//     badge: [
+//       "Full Stack App",
+//       "Typescript",
+//       "React",
+//       "Next.js",
+//       "Tailwind CSS",
+//       "Shadcn Ui",
+//       "React Query",
+//       "React Hook Form",
+//       "Zod",
+//       "React Redux",
+//       "Team Work",
+//       "Responsive Design",
+//       "Resend",
+//       "Research",
+//     ],
+//   },
+//   {
+//     id: 2,
 
-    project: "Rupeespot",
-    icon: DiscountIcon,
+//     project: "Rupeespot",
+//     icon: DiscountIcon,
 
-    location: "Remote",
-    href: "http://rupeespot.com/",
-    duration: "Part-Time  | Dec 2022 - Dec 2024",
-    description: `Rupeespot is a platform for ecommerce costumers which has collection of Amazon, Flipkat and Ajio latest deals products. Where user can also Track lowest prices and check the price history of specific product.
-`,
-    tasks: [
-      "User can Track any product price and get notification.",
-      "User can see price history or any product and analyise it.",
-      "Also have coupans and reedem codes.",
-      "Created Product from scratch with Nextjs 14 and Typescript.",
-      "Integreated the Next auth for authentication.",
-      "Also connected with MySql datatabase via Drizzle ORM.",
-      "Used Framer motion and shadcnui for creating beautiful components.",
-    ],
-    badge: [
-      "Full Stack App",
-      "Typescript",
-      "React",
-      "Next.js",
-      "Apexcharts",
-      "My Sql Database",
-      "Drizzle ORM",
-      "Tailwind CSS",
-      "Shadcn Ui",
-      "React Query",
-      "React Hook Form",
-      "Zod",
-      "React Redux",
-      "Team Work",
-      "Responsive Design",
-      "React Emails",
-      "Research",
-    ],
-  },
-];
+//     location: "Remote",
+//     href: "http://rupeespot.com/",
+//     duration: "Part-Time  | Dec 2022 - Dec 2024",
+//     description: `Rupeespot is a platform for ecommerce costumers which has collection of Amazon, Flipkat and Ajio latest deals products. Where user can also Track lowest prices and check the price history of specific product.
+// `,
+//     tasks: [
+//       "User can Track any product price and get notification.",
+//       "User can see price history or any product and analyise it.",
+//       "Also have coupans and reedem codes.",
+//       "Created Product from scratch with Nextjs 14 and Typescript.",
+//       "Integreated the Next auth for authentication.",
+//       "Also connected with MySql datatabase via Drizzle ORM.",
+//       "Used Framer motion and shadcnui for creating beautiful components.",
+//     ],
+//     badge: [
+//       "Full Stack App",
+//       "Typescript",
+//       "React",
+//       "Next.js",
+//       "Apexcharts",
+//       "My Sql Database",
+//       "Drizzle ORM",
+//       "Tailwind CSS",
+//       "Shadcn Ui",
+//       "React Query",
+//       "React Hook Form",
+//       "Zod",
+//       "React Redux",
+//       "Team Work",
+//       "Responsive Design",
+//       "React Emails",
+//       "Research",
+//     ],
+//   },
+// ];
 
 
 const educationData = [
   {
-    duration: "2023 - 2026",
-    institution: "Doranda College",
+    duration: "2021 - 2025",
+    institution: "Punjab Technical University (PTU)",
     icon: GraduationCap,
     description:
-      "Currently pursuing a Bachelor's degree in Computer Applications (BCA) at Doranda College.",
+      "Recently completed my Bachelor's in Computer Science and Engineering (B TECH) at Punjab Technical University.",
     points: [
-      "Bachelor of Computer Applications (BCA)",
+      "Bachelor's in Computer Science and Engineering (B TECH)",
       "Learning programming, data structures, and web development",
       "Participating in tech events and workshops",
       "Preparing for a career in software and IT industry",
     ],
   },
   {
-    duration: "2021 - 2022",
-    institution: "Radha Govind College",
+    duration: "2019 - 2021",
+    institution: "Trident Public School",
     icon: GraduationCap,
     description:
-      "Studied Class 11 and 12 at Radha Govind College, an English medium institution under the Government board.",
+      "Studied Class 11 and 12 at Trident Public School, an English medium institution under the Central board of Education.",
     points: [
       "Classes attended: 11th and 12th",
-      "Government board education system",
+      "Central board of secondary education",
       "Specialized in science stream subjects",
       "Built strong academic foundation for higher studies",
     ],
   },
   {
-    duration: "2017 - 2020",
-    institution: "Sri Guru Nanak Public School",
+    duration: "2012 - 2019",
+    institution: "Trident Public School",
     icon: GraduationCap,
     description:
-      "Completed Class 8 to 10 at Sri Guru Nanak Public School, an English medium school affiliated with the CBSE board.",
+      "Completed Class 3 to 10 at Trident Public School, an English medium school affiliated with the CBSE board.",
     points: [
-      "Classes attended: 8th to 10th",
+      "Classes attended: 3rd to 10th",
       "CBSE board curriculum",
       "Focused on academic excellence and board preparation",
       "Enhanced communication and reasoning skills",
     ],
   },
   {
-    duration: "20xx - 2016",
-    institution: "St. Anns School",
+    duration: "20xx - 2012",
+    institution: "Dheeraj Public School",
     icon: GraduationCap,
     description:
-      "Studied from Class 1 to 7 at St. Anns School, an English medium school affiliated with the ICSE board.",
+      "Studied from Class LKG to 2 at Dheeraj Public School, an English medium school affiliated with the CBSE board.",
     points: [
-      "Classes attended: 1st to 7th",
+      "Classes attended: LKG to 2nd",
       "English medium instruction",
-      "ICSE board curriculum",
+      "CBSE board curriculum",
       "Foundation in core subjects like English, Math, and Science",
     ],
   },

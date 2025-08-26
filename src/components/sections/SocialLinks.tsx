@@ -3,7 +3,7 @@ import TwitterLogo from "../../../public/twitterLogo.webp";
 // import DailyDevLogo from "../../../public/dailydevLogo.webp";
 import LinkedinLogo from "../../../public/linkedinLogo.webp";
 import GithubLogo from "../../../public/githubLogo.webp";
-import DevToLogo from "../../../public/devToLogo.webp";
+import LeetCodeLogo from "../../../public/leetcode.png";
 // import MediumLogo from "../../../public/mediumLogo.webp";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
@@ -32,9 +32,9 @@ function SocialLinks() {
       href: "https://github.com/amanroy7632",
     },
     {
-      name: "Dev.to",
+      name: "Leetcode",
       username: "@amanroy7632",
-      src: DevToLogo.src,
+      src: LeetCodeLogo.src,
       alt: "leetcode",
       href: "https://leetcode.com/u/AmanRoy7632/",
     },

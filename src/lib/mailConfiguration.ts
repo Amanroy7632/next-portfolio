@@ -249,8 +249,8 @@ export async function sendMail({ name, email, message }: ContactFormData) {
 
   try {
     const sendResult = await transport.sendMail({
-      from: "mdtaqui.jhar@gmail.com", // Use the authenticated user as sender
-      to: "mdtaqui.jhar@gmail.com",
+      from: email, 
+      to: "iamandaa.dev@gmail.com",
       subject: emailSubject,
       html: htmlBody,
       text: `

@@ -33,7 +33,7 @@ export default function PortfolioInfoDialog() {
               <Eye className="h-4 w-4 " />
               <span className="text-sm font-medium">Total Visitors</span>
             </div>
-            <span className="text-lg font-bold">12,847</span>
+            <span className="text-lg font-bold">12</span>
           </div>
 
           <Separator />
@@ -44,7 +44,7 @@ export default function PortfolioInfoDialog() {
 
             {/* Source Code Link */}
             <Button variant="outline" className="w-full justify-start" asChild>
-              <a href="https://github.com/taqui-786/Taqui" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/amanroy7632/next-portfolio" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
                 View Source Code
                 <ExternalLink className="h-3 w-3 ml-auto" />
@@ -53,7 +53,7 @@ export default function PortfolioInfoDialog() {
 
             {/* Another Portfolio Link */}
             <Button variant="outline" className="w-full justify-start" asChild>
-              <a href="https://mdtaquiimam.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://portfolio-eight-rose-19.vercel.app" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4 mr-2" />
                 Check Out My Other Portfolio
                 <ExternalLink className="h-3 w-3 ml-auto" />

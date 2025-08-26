@@ -7,9 +7,9 @@ import { FlipSentences } from "../ui/FlipSentences";
 function ProfileSection() {
   const flipSentences = [
     "Full stack developer crafting modern web applications.",
-    "Open source contributor building in public consistently.",
-    "Tech blogger sharing insights and tutorials regularly.",
+    "Mostly as Backend Development.",
     "Creator of useful and exciting side projects.",
+    "Backend Architecture and developer at Ur Heaven Space Pvt Ltd.",
   ];
 
   return (
