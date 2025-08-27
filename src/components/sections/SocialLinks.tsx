@@ -14,7 +14,7 @@ function SocialLinks() {
       username: "@amanroy7632",
       src: TwitterLogo.src,
       alt: "Twitter",
-      href: "https://twitter.com/Taquiimam14",
+      href: "https://twitter.com/amanroy7632",
     },
 
     {
@@ -22,7 +22,7 @@ function SocialLinks() {
       username: "@amanroy7632",
       src: LinkedinLogo.src,
       alt: "LinkedIn",
-      href: "https://www.linkedin.com/in/taqui-imam/",
+      href: "https://www.linkedin.com/in/aman-kumar-yadav-0a1b35243",
     },
     {
       name: "GitHub",

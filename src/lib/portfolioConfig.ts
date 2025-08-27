@@ -12,7 +12,7 @@ export const portfolioConfig = {
   socialLinks: {
     facebook: "https://www.facebook.com/share/16rmZ4AzYF",
     // twitter: "https://twitter.com/Taquiimam14",
-    linkedin: "https://www.linkedin.com/in/taqui-imam",
+    linkedin: "https://www.linkedin.com/in/aman-kumar-yadav-0a1b35243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // external: "https://tinyurl.com/",
     github: "https://github.com/amanroy7632", 
   },
