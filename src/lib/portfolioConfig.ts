@@ -10,17 +10,17 @@ export const portfolioConfig = {
 
   // Social Media Links
   socialLinks: {
-    facebook: "https://www.facebook.com/shahina.khatun.1044",
-    twitter: "https://twitter.com/Taquiimam14",
+    facebook: "https://www.facebook.com/share/16rmZ4AzYF",
+    // twitter: "https://twitter.com/Taquiimam14",
     linkedin: "https://www.linkedin.com/in/taqui-imam",
-    external: "https://tinyurl.com/MdTaquiImam",
-    github: "https://github.com/taqui-786", 
+    // external: "https://tinyurl.com/",
+    github: "https://github.com/amanroy7632", 
   },
 
   // SEO Information
   seo: {
-    ogImage: "https://taqui-imam.vercel.app/og-image.png",
-    url: "https://taqui-imam.vercel.app",
+    ogImage: "https://iamandaa.vercel.app/og-image.png",
+    url: "https://iamandaa.vercel.app",
     twitterHandle: "@amanroy7632",
     keywords: [
       "aman",

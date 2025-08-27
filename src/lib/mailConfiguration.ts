@@ -227,7 +227,6 @@ function createContactEmailTemplate({
     `;
 }
 
-// Updated sendMail function
 export async function sendMail({ name, email, message }: ContactFormData) {
   const { SMPT_HOST, SMPT_USER, SMPT_PASS } = process.env;
 
@@ -249,7 +248,7 @@ export async function sendMail({ name, email, message }: ContactFormData) {
 
   try {
     const sendResult = await transport.sendMail({
-      from: email, 
+      from: email,
       to: "iamandaa.dev@gmail.com",
       subject: emailSubject,
       html: htmlBody,
