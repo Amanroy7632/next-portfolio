@@ -157,7 +157,7 @@ function PixelCursor() {
       transition={{ duration: 0.1 }}
     >
       {[...Array(5)].map((_, i) => (
-        <div key={i} className="size-2 bg-[#333] dark:bg-white" />
+        <div key={i} className="size-2 bg-[#333] dark:bg-white" /> 
       ))}
     </motion.div>
   );
