@@ -155,6 +155,35 @@ const projects = [
   },
   {
     id: 2,
+    title: "Trendkari - Trending Blogs",
+    href: "https://github.com/Amanroy7632",
+    live: "https://trendkari.in",
+    createdAt: "30-10-2025",
+    description: "TrendKari.in is a content/trends website that publishes trending topics and articles across various categories such as fashion, lifestyle, tech, entertainment, and more.",
+    features: [
+      "Important days and events of the year",
+      "Seasonal greetings & inspirational content",
+      "Users can create account and upload their blogs",
+      "Users can view and like comment on the posts",
+      "User-friendly interface for easy navigation",
+      "Built with React.js library",
+      "Manual Authentication powered by 0auth",
+      "Data stored in MongoDb",
+      "Modern UI components styled with React-icons and Tailwind CSS",
+    ],
+    badge: [
+      "React.js",
+      "JavaScript",
+      "Oauth",
+      "Tailwind CSS",
+      "MongoDb",
+      "Node.js",
+      "Vercel",
+      "Collabrate"
+    ],
+  },
+  {
+    id: 3,
     title: "Book My Adventure",
     href: "https://github.com/Amanroy7632/Book-my-adventure",
     live: "https://book-my-adventure.vercel.app",
@@ -183,7 +212,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     href: "https://github.com/amanroy7632/next-portfolio",
     live: "https://iamandaa.vercel.app/",
@@ -210,7 +239,7 @@ const projects = [
   },
  
   {
-    id: 4,
+    id: 5,
     title: "CRMsWEB",
     href: "https://github.com/Amanroy7632/crmsweb",
     live: "https://crmsweb.vercel.app/",
@@ -240,7 +269,7 @@ const projects = [
     ],
   },
    {
-    id: 5,
+    id: 6,
     title: "Student Database Management System",
     href: "https://github.com/Amanroy7632/Student-Database-System",
     live: "https://github.com/Amanroy7632/Student-Database-System",

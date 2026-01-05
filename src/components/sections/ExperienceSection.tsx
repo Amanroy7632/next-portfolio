@@ -59,7 +59,7 @@ function ExperienceSection() {
                       )}
                     </h3>
                     <span className="text-muted-foreground font-normal text-sm">
-                      {exp.duration}
+                      {exp.duration} | {exp.location}
                     </span>
                   </div>
                 </AccordionTrigger>
@@ -95,7 +95,7 @@ function ExperienceSection() {
           </div>
         ))}
       </div>
-      
+
       <div className="px-4 py-2   ">
         <h3 className="text-primary font-medium ">Education</h3>
       </div>
@@ -128,7 +128,6 @@ function ExperienceSection() {
                   <div className="flex-1 flex flex-col items-start justify-center py-4 pl-4  gap-1 h-full">
                     <h3 className="text-balance font-mono  font-medium text-base leading-snug flex gap-2 items-center justify-center">
                       {institute.institution}
-
                     </h3>
                     <span className="text-muted-foreground font-normal text-sm">
                       {institute.duration}
@@ -144,7 +143,6 @@ function ExperienceSection() {
                         <li key={index}>{feature}</li>
                       ))}
                     </ul>
-                 
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -221,13 +219,12 @@ const experienceData = [
     description: ` It is a Software and Construction company where you can manage properties with ease.Providing SAAS Platform i.e crmjio.com.`,
     tasks: [
       "Currently employed as Backend Engineer at UR Heaven Space, where I specialize in utilizing the following technologies -> JavaScript, MongoDB, Redis, AWS (EC2), VPS, docker, Node.js, Express.js, RESTful APIs..",
-"Contributed to developing the scalable, robust services include Role based Authentication (JWT), Efficient Models.",
+      "Contributed to developing the scalable, robust services include Role based Authentication (JWT), Efficient Models.",
       "Collaborated with frontend developers to integrate APIs with frontends.",
       "Optimized application performance and resolved bugs.",
       "Led a transformation of monolith to microservices to increase the scalability, availability of services.",
       "Integrated Payment gateway (RazorPay,Cashfree) for secure transactions and monitoring.",
-      "Contributed to developing Notification Service using SMTP servers, Worked with third party APIs Veblika,Sandgrid."
-
+      "Contributed to developing Notification Service using SMTP servers, Worked with third party APIs Veblika,Sandgrid.",
     ],
     badge: [
       "JavScript",
@@ -246,10 +243,53 @@ const experienceData = [
       "Third-party APIs",
       "Database Design",
       "Backend Architect",
+      "Git",
+      "Github",
       "VPS",
-      "Mongodb"
+      "Mongodb",
     ],
   },
+  // {
+  //   id: 2,
+  //   title: "Software Developer",
+  //   company: "Ice Technology Lab",
+  //   icon: CodeXml,
+  //   job: true,
+  //   location: "Hybrid",
+  //   href: "https://www.icetl.com/",
+  //   duration: "Hybrid  | Jul 2024 - Nov 2024",
+  //   description: ` ICE Technology Lab is an IT training institute based in Patna, Bihar, India.`,
+  //   tasks: [
+  //     "Completed a 2-month intensive training program, focusing on MEAN stack development (MongoDB, Express.js, Angular, Node.js).",
+  //     "Worked as a Backend Intern after training, contributing to the development of RESTful APIs using Node.js and Express.js.",
+  //     "Implemented role-based authentication and authorization using JWT.",
+  //     "Designed and optimized MongoDB schemas and queries for efficient data handling.",
+  //     "Collaborated with frontend developers to integrate backend APIs.",
+  //     "Assisted in debugging, performance optimization, and resolving backend issues.",
+  //     "Gained hands-on experience with third-party API integrations and backend service workflows.",
+  //     "Used Git for version control and followed best practices for clean, maintainable code.",
+  //   ],
+  //   badge: [
+  //     "JavScript",
+  //     "Typescript",
+  //     "React",
+  //     "Next.js",
+  //     "Tailwind CSS",
+  //     "React Query",
+  //     "React Hook Form",
+  //     "Node.js",
+  //     "Team Work",
+  //     "Secure API",
+  //     "Performence",
+  //     "Third-party APIs",
+  //     "Database Design",
+  //     "Backend Architect",
+  //     "VPS",
+  //     "Git",
+  //     "Github",
+  //     "Mongodb",
+  //   ],
+  // },
   {
     id: 2,
     title: "Looking For an Opportunity",
@@ -349,7 +389,6 @@ const experienceData = [
 //     ],
 //   },
 // ];
-
 
 const educationData = [
   {
