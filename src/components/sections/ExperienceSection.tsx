@@ -215,7 +215,7 @@ const experienceData = [
     job: true,
     location: "On-Site",
     href: "https://www.urheavenspace.com/",
-    duration: "Full-Time  | Nov 2024 - Current",
+    duration: "Full-Time  | Mar 2024 - Current",
     description: ` It is a Software and Construction company where you can manage properties with ease.Providing SAAS Platform i.e crmjio.com.`,
     tasks: [
       "Currently employed as Backend Engineer at UR Heaven Space, where I specialize in utilizing the following technologies -> JavaScript, MongoDB, Redis, AWS (EC2), VPS, docker, Node.js, Express.js, RESTful APIs..",
@@ -296,7 +296,7 @@ const experienceData = [
     company: "Looking For an Opportunity",
     job: false,
     icon: Lightbulb,
-    location: "Bangalore, India",
+    location: "Delhi, India",
     href: "",
     duration: "Full-Time | Current",
     description: `i am looking for an opportunity in full stack web development`,
