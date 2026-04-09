@@ -27,7 +27,7 @@ function AboutSection() {
           and experimenting with creative ideas that can make an impact.
         </p>
         <p className="tracking-wide">
-          Let&apos;s connect and build something amazing together!
+          Let&apos;s connect and build something amazing together!&nbsp;
         </p>
       </div>
     </section>
