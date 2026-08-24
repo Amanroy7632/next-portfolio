@@ -121,10 +121,79 @@ export default ProjectsSection;
 const projects = [
   {
     id: 1,
+    title: "CRMSAATHI - Smart CRM Solutions",
+    href: "https://github.com/amanroy7632",
+    live: "https://crmsaathi.com",
+    createdAt: "On Going",
+    description:
+      "CRMSAATHI positions itself as a leading billing and CRM solution tailored specifically for repair shops, service centers, and device retailers. Whether you're managing mobile, electronics, automotive, or appliance repair, CRMJIO provides a comprehensive, cloud-based ecosystem for business efficiency",
+    features: [
+      "User authentication including sign up, sign in, and logout",
+      "Role Based Authentication & Authorization",
+      "Inventory & Jobsheet Management",
+      "Customizable user interface",
+      "Responsive user interface design",
+      "Multiple Dashboards Admin,Users,Teams",
+      "Built with Next.js 14 framework",
+      "Data stored in MongoDb",
+      "Efficient data fetching using Tanstack Query",
+      "Modern UI components styled with Tailwind CSS & React-icons",
+    ],
+    badge: [
+      "CRM Services",
+      "React.js",
+      "Typescript",
+      "Jwt Auth",
+      "MongoDb",
+      "Socket.io",
+      "Tailwind CSS",
+      "Tanstack Query",
+      "VPS",
+      "Nginx",
+      "Docker"
+    ],
+  },
+    {
+    id: 2, // Adjust the ID based on its position in your projects array
+    title: "ExpertBells - 1:1 Mentorship & Business Consulting",
+    href: "https://github.com/amanroy7632",
+    live: "https://expertbells.org",
+    createdAt: "On Going",
+    description:
+      "ExpertBells is a comprehensive mentorship and business consulting platform that connects startups, entrepreneurs, and professionals with industry experts. It streamlines 1:1 video consultations, business advisory, and corporate compliance services within a scalable ecosystem.",
+    features: [
+      "1:1 Mentorship session booking & appointment scheduling",
+      "Dedicated multi-role dashboards for Users, Mentors, and Super Admins",
+      "Role-Based Authentication & Authorization (RBAC)",
+      "Business advisory & legal compliance service catalog",
+      "Secure payment gateway integration & invoice generation",
+      "Real-time notifications & booking status management",
+      "Responsive and modern UI built with Next.js / React and Tailwind CSS",
+      "Scalable REST API backend with MongoDB database integration",
+      "State & server data synchronization using TanStack Query",
+    ],
+    badge: [
+      "Mentorship Platform",
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Auth",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Socket.io",
+      "REST API"
+    ],
+  },
+
+  {
+    id: 3,
     title: "CRMJIO - Smart CRM Solutions",
     href: "https://github.com/amanroy7632",
     live: "https://crmjio.com",
-    createdAt: "On Going",
+    createdAt: "06-05-2026",
     description:
       "CRMJIO positions itself as a leading billing and CRM solution tailored specifically for repair shops, service centers, and device retailers. Whether you're managing mobile, electronics, automotive, or appliance repair, CRMJIO provides a comprehensive, cloud-based ecosystem for business efficiency",
     features: [
@@ -154,7 +223,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Trendkari - Trending Blogs",
     href: "https://github.com/Amanroy7632",
     live: "https://trendkari.in",
@@ -183,7 +252,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "Book My Adventure",
     href: "https://github.com/Amanroy7632/Book-my-adventure",
     live: "https://book-my-adventure.vercel.app",
@@ -212,7 +281,7 @@ const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Portfolio",
     href: "https://github.com/amanroy7632/next-portfolio",
     live: "https://iamandaa.vercel.app/",
@@ -239,7 +308,7 @@ const projects = [
   },
  
   {
-    id: 5,
+    id: 7,
     title: "CRMsWEB",
     href: "https://github.com/Amanroy7632/crmsweb",
     live: "https://crmsweb.vercel.app/",
@@ -269,7 +338,7 @@ const projects = [
     ],
   },
    {
-    id: 6,
+    id: 8,
     title: "Student Database Management System",
     href: "https://github.com/Amanroy7632/Student-Database-System",
     live: "https://github.com/Amanroy7632/Student-Database-System",
