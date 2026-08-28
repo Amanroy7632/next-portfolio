@@ -309,6 +309,19 @@ export default function ProjectsPage() {
               Operations dashboard and knowledge centre
             </figcaption>
           </figure>
+          <figure className="overflow-hidden border bg-muted/30">
+            <Image
+              src="/crmsaathi/sc3.png"
+              alt="CRMSAATHI article hub showing categories, search, and operational guides"
+              width={1600}
+              height={900}
+              className="h-auto w-full"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+            <figcaption className="border-t px-4 py-3 font-mono text-xs text-muted-foreground">
+              Article hub for operational guides
+            </figcaption>
+          </figure>
         </div>
       </section>
 
