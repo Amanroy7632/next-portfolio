@@ -3,6 +3,8 @@ import React from "react";
 import MyImage from "../../../public/profile.jpeg";
 import { VerifiedFilledIcon } from "../Icons";
 import { FlipSentences } from "../ui/FlipSentences";
+import { FileText } from "lucide-react";
+import { Button } from "../ui/button";
 
 function ProfileSection() {
   const flipSentences = [
@@ -44,6 +46,28 @@ function ProfileSection() {
         </div>
         <div className="h-9 border-t flex items-center justify-start  py-1 pl-4  md:h-auto">
           <FlipSentences sentences={flipSentences} />
+        </div>
+        <div className="border-t flex flex-wrap items-center gap-2 px-4 py-2">
+          <Button size="sm" variant="outline" asChild>
+            <a
+              href="https://drive.google.com/file/d/1ea2nj6Bmt-X_ti6bFDh8f-YtnyIlR6nT/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileText />
+              Resume
+            </a>
+          </Button>
+          <Button size="sm" variant="outline" asChild>
+            <a
+              href="https://drive.google.com/file/d/1ax2f9JsWRPvbJDlpWrl9gcOYTFQUAZWN/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileText />
+              Cover Letter
+            </a>
+          </Button>
         </div>
       </div>
     </section>

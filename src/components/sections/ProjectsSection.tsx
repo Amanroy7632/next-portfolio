@@ -9,17 +9,26 @@ import {
 } from "@/components/ui/accordion";
 import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 function ProjectsSection() {
   const [showMore, setShowMore] = useState(false);
   const [openItem, setOpenItem] = useState("project-1");
   const filteredProjects = showMore ? sortedProjects : sortedProjects.slice(0, 4);
   return (
-    <section className=" border-x full-line-bottom relative">
-      <h2 className="pl-4 text-3xl font-semibold relative full-line-bottom ">
-        Projects{" "}
-        <sup className="ml-1 font-mono text-sm text-muted-foreground select-none">
-          ({projects.length})
-        </sup>
+    <section id="projects" className=" border-x full-line-bottom relative">
+      <h2 className="flex items-center justify-between pl-4 pr-4 text-3xl font-semibold relative full-line-bottom ">
+        <span>
+          Projects{" "}
+          <sup className="ml-1 font-mono text-sm text-muted-foreground select-none">
+            ({projects.length})
+          </sup>
+        </span>
+        <Link
+          href="/projects"
+          className="flex items-center gap-1 font-mono text-xs font-normal text-muted-foreground hover:text-foreground"
+        >
+          Featured <ArrowUpRight className="size-4" />
+        </Link>
       </h2>
       <div className="">
         {filteredProjects.map((project, index) => (
