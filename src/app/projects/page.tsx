@@ -245,6 +245,11 @@ const projectScreenshots: Record<string, { src: string; alt: string; caption: st
       alt: "ExpertBells mentee dashboard showing sessions, recommended mentors, messages, and notifications",
       caption: "Mentee dashboard and session management",
     },
+    {
+      src: "/expertbells/sc4.png",
+      alt: "ExpertBells mentor dashboard showing upcoming sessions, purchased packages, and mentor profile recommendations",
+      caption: "Mentor dashboard and session operations",
+    },
   ],
 };
 
