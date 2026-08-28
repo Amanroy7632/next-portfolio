@@ -314,7 +314,7 @@ export default function ProjectsPage() {
             <p className="font-mono text-xs uppercase text-muted-foreground">Product views</p>
             <h2 className="mt-2 text-2xl font-semibold">A closer look at CRMSAATHI.</h2>
           </div>
-          <span className="font-mono text-xs text-muted-foreground">02 screens</span>
+          <span className="font-mono text-xs text-muted-foreground">04 screens</span>
         </div>
         <div className="grid gap-4 lg:grid-cols-2">
           <figure className="overflow-hidden border bg-muted/30">
@@ -354,6 +354,19 @@ export default function ProjectsPage() {
             />
             <figcaption className="border-t px-4 py-3 font-mono text-xs text-muted-foreground">
               Article hub for operational guides
+            </figcaption>
+          </figure>
+          <figure className="overflow-hidden border bg-muted/30">
+            <Image
+              src="/crmsaathi/sc4.png"
+              alt="CRMSAATHI branch management dashboard showing analytics, revenue, jobsheets, customers, and inventory"
+              width={1600}
+              height={900}
+              className="h-auto w-full"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+            />
+            <figcaption className="border-t px-4 py-3 font-mono text-xs text-muted-foreground">
+              Branch management and performance analytics
             </figcaption>
           </figure>
         </div>
