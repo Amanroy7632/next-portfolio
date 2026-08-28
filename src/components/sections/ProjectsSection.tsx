@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 function ProjectsSection() {
   const [showMore, setShowMore] = useState(false);
   const [openItem, setOpenItem] = useState("project-1");
-  const filteredProjects = showMore ? projects : projects.slice(0, 4);
+  const filteredProjects = showMore ? sortedProjects : sortedProjects.slice(0, 4);
   return (
     <section className=" border-x full-line-bottom relative">
       <h2 className="pl-4 text-3xl font-semibold relative full-line-bottom ">
@@ -227,7 +227,7 @@ const projects = [
     title: "Dr iPhone Repair - Service Platform",
     href: "https://driphonerepair.com",
     live: "https://driphonerepair.com",
-    createdAt: "On Going",
+    createdAt: "25-11-2025",
     description: "Dr iPhone Repair is a leading mobile and Apple device repair center offering professional repair services across Delhi NCR (Dwarka, South Delhi, Gurgaon). The platform provides transparent pricing, certified technicians, genuine parts warranty, and doorstep repair services for iPhone, iPad, MacBook, Apple Watch, and Android devices.",
     features: [
       "Comprehensive device repair services for iPhone, iPad, MacBook, Apple Watch, and Android phones",
@@ -259,7 +259,7 @@ const projects = [
     title: "Dr iPhone Repair - Booking & Admin Portal",
     href: "https://driphonerepair.com",
     live: "https://driphonerepair.com/repair",
-    createdAt: "On Going",
+    createdAt: "01-01-2026",
     description: "Advanced booking and admin management system for Dr iPhone Repair that handles customer appointments, repair tracking, technician management, and service analytics. The system enables seamless online booking, real-time repair status tracking, and comprehensive business intelligence for operations across multiple service centers.",
     features: [
       "Unified booking system for multiple service centers and repair types",
@@ -430,7 +430,7 @@ const projects = [
     title: "D2C Circle - 7-Week D2C Accelerator Program",
     href: "https://d2ccircle.com",
     live: "https://d2ccircle.com/register",
-    createdAt: "On Going",
+    createdAt: "11-06-2026",
     description: "D2C Circle is a comprehensive 7-week live accelerator program designed to help early-stage and growth D2C founders build and scale their consumer brands to ₹100+ crore. The program combines expert-led masterclasses, practical frameworks, investor connections, and peer learning within a curated community of 30+ ambitious founders.",
     features: [
       "14 live expert-led sessions covering product-market fit, brand positioning, and growth strategies",
@@ -462,7 +462,7 @@ const projects = [
     title: "D2C AI Growth Summit - Annual Networking Event",
     href: "https://summit.d2ccircle.com",
     live: "https://summit.d2ccircle.com/passes",
-    createdAt: "On Going",
+    createdAt: "21-07-2026",
     description: "D2C AI Growth Summit is India's premier annual event bringing together 250+ D2C founders, investors, and ecosystem leaders for a day of strategic learning, high-value networking, and business acceleration. The summit focuses on AI-driven growth strategies and connects the Indian D2C ecosystem with global opportunities.",
     features: [
       "One-day flagship offline summit with 250+ D2C founders, investors, and industry leaders",
@@ -493,3 +493,24 @@ const projects = [
     ],
   },
 ];
+
+const sortedProjects = [...projects].sort((firstProject, secondProject) => {
+  const firstIsOngoing = firstProject.createdAt.toLowerCase() === "on going";
+  const secondIsOngoing = secondProject.createdAt.toLowerCase() === "on going";
+
+  if (firstIsOngoing !== secondIsOngoing) {
+    return firstIsOngoing ? -1 : 1;
+  }
+
+  const [firstDay, firstMonth, firstYear] = firstProject.createdAt
+    .split("-")
+    .map(Number);
+  const [secondDay, secondMonth, secondYear] = secondProject.createdAt
+    .split("-")
+    .map(Number);
+
+  return (
+    new Date(secondYear, secondMonth - 1, secondDay).getTime() -
+    new Date(firstYear, firstMonth - 1, firstDay).getTime()
+  );
+});
