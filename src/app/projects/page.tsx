@@ -251,6 +251,18 @@ const projectScreenshots: Record<string, { src: string; alt: string; caption: st
       caption: "Mentor dashboard and session operations",
     },
   ],
+  Portfolio: [
+    {
+      src: "/portfolio/sc1.png",
+      alt: "Aman.Dev portfolio homepage showing profile, contact details, social links, and project sections",
+      caption: "Latest portfolio design",
+    },
+    {
+      src: "/portfolio/sc2.png",
+      alt: "Aman Kumar Yadav portfolio landing page with navigation, profile introduction, social links, and resume action",
+      caption: "Oldest portfolio design",
+    },
+  ],
 };
 
 export default function ProjectsPage() {
