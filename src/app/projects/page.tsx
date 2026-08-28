@@ -229,6 +229,23 @@ const projectScreenshots: Record<string, { src: string; alt: string; caption: st
       caption: "SaaS platform landing page",
     },
   ],
+  "ExpertBells - 1:1 Mentorship & Business Consulting": [
+    {
+      src: "/expertbells/sc1.png",
+      alt: "ExpertBells mentorship platform homepage with mentor discovery and session booking actions",
+      caption: "Mentorship platform homepage",
+    },
+    {
+      src: "/expertbells/sc2.png",
+      alt: "ExpertBells mentor discovery page with search, filters, expertise categories, and mentor profiles",
+      caption: "Mentor discovery and filtering experience",
+    },
+    {
+      src: "/expertbells/sc3.png",
+      alt: "ExpertBells mentee dashboard showing sessions, recommended mentors, messages, and notifications",
+      caption: "Mentee dashboard and session management",
+    },
+  ],
 };
 
 export default function ProjectsPage() {
