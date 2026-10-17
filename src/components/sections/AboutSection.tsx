@@ -12,7 +12,7 @@ function AboutSection() {
           a full stack engineer passionate about building modern and scalable web applications.
         </p>
         <p className="tracking-wide">
-          My main tech stack includes the <span className="font-semibold">MERN stack (MongoDB, Express.js, React, Node.js)</span>, 
+          My main tech stack includes the <span className="font-semibold">PERN & MERN stacks (PostgreSQL, MongoDB, Express.js, React, Node.js)</span>, 
           along with <span className="font-semibold">Next.js</span> for server-side rendering and performance optimization.  
           I also work with <span className="font-semibold">VPS deployments and AWS cloud infrastructure</span> to build 
           secure and scalable applications.

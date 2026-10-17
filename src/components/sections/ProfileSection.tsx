@@ -9,6 +9,7 @@ import { Button } from "../ui/button";
 function ProfileSection() {
   const flipSentences = [
     "Full stack developer crafting modern web applications.",
+    "Full Stack PERN Developer at SISGAIN.",
     "Mostly as Backend Development.",
     "Creator of useful and exciting side projects.",
     "Backend Architecture and developer at Ur Heaven Space Pvt Ltd.",
@@ -39,7 +40,7 @@ function ProfileSection() {
       
         </div>
         <div className=" border-t">
-          <h1 className=" pl-4 py-0.5 font-semibold  select-none text-2xl flex items-center font-mono  ">
+          <h1 className=" pl-4 py-0.5 font-semibold  select-none text-xl sm:text-2xl flex items-center font-mono  ">
             Aman Kumar Yadav&nbsp;
             <VerifiedFilledIcon />{" "}
           </h1>
